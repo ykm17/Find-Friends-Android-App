@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Find</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_sample">Map</string>
+    <string name="title_activity_main22">Main22Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_nav_drawer">NavDrawer</string>
+    <string name="FCM_TOKEN">com.example.ykm.find.fcm_token</string>
+
+    <string name="FCM_PREF">com.example.ykm.find.fcm_pref</string>
+    <string name="title_activity_request_acitivty_tabs">RequestAcitivtyTabs</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

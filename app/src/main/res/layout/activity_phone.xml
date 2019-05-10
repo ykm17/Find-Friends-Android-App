@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ykm.findfriends.PhoneActivity">
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27dp"
+        />
+
+    <TextView
+        android:id="@+id/phoneno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:textSize="30dp"
+        android:layout_toStartOf="@+id/phoneNumber"
+        android:text="Phone no:"
+        android:layout_alignBottom="@+id/phoneNumber"
+        android:layout_alignTop="@+id/phoneNumber"/>
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textSize="30dp"
+        android:text="Code:"
+        android:layout_below="@+id/phoneno"
+        android:layout_alignStart="@+id/phoneno"
+        android:layout_alignEnd="@+id/phoneno"/>
+
+    <EditText
+        android:id="@+id/codeReceived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignTop="@+id/code"
+        android:layout_toEndOf="@+id/phoneno"/>
+
+    <Button
+        android:id="@+id/phoneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/code"
+        android:layout_below="@+id/codeReceived"
+        android:layout_marginTop="14dp"
+        android:text="Confirm no"/>
+
+    <Button
+        android:id="@+id/codeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm code"
+        android:layout_marginStart="27dp"
+        android:layout_alignBaseline="@+id/phoneButton"
+        android:layout_alignBottom="@+id/phoneButton"
+        android:layout_toEndOf="@+id/phoneButton"/>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/codeButton"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/codeButton"
+        android:text="RESEND"/>
+</RelativeLayout>

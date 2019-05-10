@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <tabs>
+        <tab
+            id="@+id/friends"
+            icon="@drawable/friends_tab"
+            title="Friends"
+            barColorWhenSelected="#691A99"
+            />
+        <tab
+            id="@+id/locate"
+            icon="@drawable/location_tab"
+            title="Locate"
+            barColorWhenSelected="#68EFAD"/>
+        <tab
+            id="@+id/request"
+            icon="@drawable/profile_tab"
+            title="Request"
+            barColorWhenSelected="#691A99"/>
+        <tab
+            id="@+id/profile"
+            icon="@drawable/profile_tab"
+            title="Profile"
+            barColorWhenSelected="#68EFAD"/>
+    </tabs>
+
+</PreferenceScreen>

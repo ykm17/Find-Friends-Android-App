@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#5c6bc0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ykm.findfriends.MainActivity"
+    >
+
+
+    <Button
+        android:background="@android:color/transparent"
+        android:id="@+id/gotoSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register ?"
+        android:layout_marginStart="7dp"
+        android:layout_below="@+id/LoginButton"
+        android:layout_alignStart="@+id/LoginButton"
+        android:layout_marginTop="9dp"/>
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="78dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="14dp"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/emailText"
+        android:layout_toEndOf="@+id/LoginButton"
+        android:layout_marginRight="14dp"/>
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="30sp"
+        android:layout_marginStart="25dp"
+        android:layout_above="@+id/passwordText"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/passwordtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textSize="30sp"
+        android:layout_alignBottom="@+id/passwordText"
+        android:layout_alignStart="@+id/nametext"/>
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:text="Login"
+        android:layout_below="@+id/passwordText"
+        android:layout_toEndOf="@+id/nametext"
+        />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:textSize="40dp"
+        android:text="SignIn"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone "
+        android:background="@android:color/transparent"
+        android:layout_marginStart="43dp"
+        android:layout_alignBaseline="@+id/LoginButton"
+        android:layout_alignBottom="@+id/LoginButton"
+        android:layout_toEndOf="@+id/gotoSignup"/>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:background="#68EFAD">
+
+    <TextView
+        android:textColor="#004D40"
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Enter name to search"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        />
+
+    <EditText
+
+        android:id="@+id/SearchEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Sam"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/searchButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:map="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/map"
+              android:name="com.google.android.gms.maps.SupportMapFragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.example.ykm.findfriends.MapsActivity"
+              android:layout_below="@+id/SearchEditText"
+              android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_toEndOf="@+id/SearchEditText"
+        android:layout_toRightOf="@+id/SearchEditText"
+        android:text="Search"
+
+        />
+
+    <Button
+        android:hapticFeedbackEnabled="true"
+        android:id="@+id/LogoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="#68EFAD"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10sp"
+        android:layout_above="@+id/bottomBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"/>
+
+   <!-- <Button
+        android:id="@+id/friendsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Friends"
+        android:layout_alignBaseline="@+id/LogoutButton"
+        android:layout_alignBottom="@+id/LogoutButton"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/stopUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:layout_alignTop="@+id/LogoutButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"/>-->
+
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:bb_tabXmlResource="@xml/bottombar_tabs"
+        app:bb_activeTabColor="#691A99"
+        app:bb_inActiveTabColor="#00796B"
+        app:bb_showShadow="true"
+        />
+</RelativeLayout>
