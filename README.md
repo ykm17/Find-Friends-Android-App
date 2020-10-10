@@ -7,4 +7,4 @@ Your live location is shared with these people using google maps.
 1. Java as (Programming Lanuage)
 2. Android Studio (IDE)
 3. Maps API (Location API)
-4. Firebase (Database for login and signup)
+4. Firebase (Database and authentication)
