@@ -4,7 +4,7 @@ Connect eachother by accepting their friend request which gives them the access 
 Your live location is shared with these people using google maps.
 
 <b>Technologies Used:</b>
-1. Java 
-2. Android Studio
-3. Maps API
-4. Firebase
+1. Java as (Programming Lanuage)
+2. Android Studio (IDE)
+3. Maps API (Location API)
+4. Firebase (Database for login and signup)
